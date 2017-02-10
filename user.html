@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kevin's User interface Clone</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/user.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Kevin's User Interface Clone</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container" id ="con1">
+    <img  class=centre src="img/Andela-logo.png" alt="Andela-logo">
+        <div class="jumbotron">
+            <h2>Andela Kenya Fellow Cohort XVI (All Female)</h2> 
+
+            <h3>Ladies, do you dream of using technology to change the world?</h3>
+            <p>he Andela Fellowship is a four-year paid technical leadership program designed to shape you into an elite software developer. The program requires that you dedicate yourself to the broader Andela community and requires that you apply yourself and challenge yourself to constantly improve personally and professionally throughout the four years of the Fellowship. Through extensive learning and work experience with top global technology companies, you’ll master the professional and technical skills needed to become a technology leader, both on the African continent and around the world.</p> 
+        </div>
+    </div>
+
+    <div class="container" id="con2">
+
+        <h2>THE APPLICATION PROCESS</h2>
+        
+        <h3>Stage 1: Application and Aptitude Assessment</h3>
+        <p>First, you’ll complete a free application, which lets us learn more about you. Once we receive your application, we’ll email you (within 2-weeks of your application) an online test that measures logical reasoning and personality fit</p>
+
+        <h3>Stage 2: Home Study </h3>
+        <p>Then you’ll need to complete an introduction to software development self-study course focused on Python. You can find the downloadable version of this course here. During the course, you’ll complete a Proctor test that will evaluate your knowledge of the content you’ve learned. You will also be invited to a Slack Community called “Open Andela” to help guide and encourage you throughout the process</p> 
+        
+        <h3>Stage 3: In-Person Interviews</h3>
+        <p>Based on performance on the Aptitude Assessment and Proctor test, we invite a select group of applicants to interview with Andela. If selected, you’ll receive an email 1 week prior to the interview stage, inviting you to a panel of interviews made up of staff members and fellows at an Andela Campus.</p> 
+        
+        <h3>Stage 4: Two Week Boot camp</h3>
+        <p>Successful applicants participate in a two-week Boot Camp at an Andela Campus led by our senior developers. The two weeks comprise of one week of home based self learning and one week of product development. You’ll be expected to learn independently as well as work on a team to deliver a final project. We’re looking for work ethic, passion, and teamwork.</p>
+
+        <h3>Stage 5: Acceptance </h3>
+        <p>The highest performing participants are accepted into Andela’s four-year Technical Leadership Program.</p>
+        <br>
+    </div>
+
+    <div class="container">
+        <div class="row" id="white">
+
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="img/and1.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <h3>Apply Here</h3>
+                        <button type="button" data-toggle="modal" data-target="#modal1">Apply Here</button>
+                    </div>
+                    </a>
+                </div>
+                
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal1" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <img  class=centre src="img/Andela-logo.png" alt="Andela-logo">
+                              <span class="required">Required *</span>
+                            </div>
+                            <div class="modal-body">
+                                <form action="#">
+                                    <div>
+                                        First name: <span class="required">*</span> <input type="text" name="firstname" class="user_input">
+                                    </div><br>
+
+                                     <div>
+                                        Last name: <span class="required">*</span> <input type="text" name="lastname" class="user_input">
+                                    </div><br>
+
+                                    <div>
+                                        Email: <span class="required">*</span> <input type="text" name="email" class="user_input">
+                                     </div><br>
+
+                                     <div>Phone: <input type="text" name="phone" class="user_input"></div><br>
+                                     <hr>
+
+                                     <div>
+                                        What is your age? <span class="required">*</span><br> 
+                                        <select class= "selection">
+                                            <option value="">please select</option>
+                                            <option value="18">18</option>
+                                            <option value="19">19</option>
+                                            <option value="20">20</option>
+                                            <option value="21">21</option>
+                                            <option value="22">22</option>
+                                            <option value="23">23</option>
+                                            <option value="24">24</option>
+                                            <option value="25">25</option>
+                                            <option value="26">26</option>
+                                            <option value="27">27</option>
+                                            <option value="28">28</option>
+                                            <option value="29">29</option>
+                                            <option value="30">30</option>
+                                            <option value="31">31</option>
+                                            <option value="32">32</option>
+                                            <option value="33">33</option>
+                                            <option value="34">34</option>
+                                            <option value="35">35</option>
+                                            <option value="36">36</option>
+                                            <option value="37">37</option>
+                                            <option value="38">38</option>
+                                            <option value="39">39</option>
+                                            <option value="40+">40 or older</option>
+                                        </select>
+                                    </div><br>
+                                     
+                                    <div>
+                                        Last Educational Institution Attended? <span class="required">*</span><br>
+                                        <select class= "selection">
+                                            <option value="1">Jomo Kenyatta University of Agriculture and Technology</option>
+                                            <option value="2">Kenyatta University</option>
+                                            <option value="3">Moi University</option>
+                                            <option value="4">Strathmore University</option>
+                                            <option value="5">Maseno University</option>
+                                            <option value="6">St.Pauls University</option>
+                                            <option value="7">Daystar University</option>
+                                            <option value="8">African Nazarene University</option>
+                                            <option value="9">Mount Kenya University</option>
+                                            <option value="10">Kenya Methodist University</option>
+                                            <option value="11">Egerton University</option>
+                                            <option value="12">Others</option>
+                                        </select>
+                                    </div><br>
+                                    
+                                    <div>
+                                        If Other( Kindly indicate here)<br>
+                                        <input type="text" name="otherInst" id="otherInstitutuion" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                        Types of Educational Institution Attended ? <span class="required">*</span><br>
+                                        <select name="edu" id="=edu" class= "selection">
+                                            <option value="">please select</option>
+                                            <option value="University">University</option>
+                                            <option value="Polytechnic">Polytechnic</option>
+                                            <option value="College">College of Education</option>
+                                            <option value="Secondary">Secondary School</option>
+                                            <option value="Technical">Technical Institute</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div><br>
+
+                                    <div>
+                                        What was your course of study? (If applicable) <br>
+                                         <input type="checkbox" name="Computer" value="1"> Computer Science<br>
+                                         <input type="checkbox" name="Electrical" value="2"> Electrical Engineering<br>
+                                         <input type="checkbox" name="Management" value="3"> Management Information Systems<br>
+                                         <input type="checkbox" name="Mathematics" value="4"> Mathematics/Statistics<br>
+                                         <input type="checkbox" name="Chemistry" value="5"> Chemistry<br>
+                                         <input type="checkbox" name="Chemical" value="6"> Chemical Engineering<br>
+                                         <input type="checkbox" name="Applied" value="7"> Applied Geophysics<br>
+                                         <input type="checkbox" name="Biochemistry" value="8"> Biochemistry/Pharmacology/Pharmacy <br>
+                                         <input type="checkbox" name="Economics" value="9"> Economics<br>
+                                         <input type="checkbox" name="Business" value="10"> Business Administration<br>
+                                         <input type="checkbox" name="Petroleum" value="11"> Petroleum Engineering <br>
+                                         <input type="checkbox" name="Civil" value="12"> Civil Engineering <br>
+                                         <input type="checkbox" name="Mechanical" value="13"> Mechanical Engineering <br>
+                                         <input type="checkbox" name="Other" value="14"> Other (answer below) <br>
+                                         <input type="checkbox" name="BIT" value="`5"> Business Information Technology<br> 
+                                    </div><br>
+
+                                    <div>
+                                        If other, what was your course of study?<br>
+                                        <input type="text" name="othercourse" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                        If you graduated from a tertiary institution, what year did you graduate?<br> 
+                                        <select class= "selection" name="grad" id="=edgraduu">
+                                            <option value="">please select</option>
+                                            <option value="1991">1991</option>
+                                            <option value="1992">1992</option>
+                                            <option value="1993">1993</option>
+                                            <option value="1994">1994</option>
+                                            <option value="1995">1995</option>
+                                            <option value="1996">1996</option>
+                                            <option value="1997">1997</option>
+                                            <option value="1998">1998</option>
+                                            <option value="1999">1999</option>
+                                            <option value="2000">2000</option>
+                                            <option value="2001">2001</option>
+                                            <option value="2002">2002</option>
+                                            <option value="2003">2003</option>
+                                            <option value="2004">2004</option>
+                                            <option value="2005">2005</option>
+                                            <option value="2006">2006</option>
+                                            <option value="2007">2007</option>
+                                            <option value="2008">2008</option>
+                                            <option value="2009">2009</option>
+                                            <option value="2010">2010</option>
+                                            <option value="2011">2011</option>
+                                            <option value="2012">2012</option>
+                                            <option value="2013">2013</option>
+                                            <option value="2014">2014</option>
+                                            <option value="2015">2015</option>
+                                            <option value="2016">2016</option>
+                                        </select>
+                                    </div><br>
+                                     
+                                    <div>
+                                        Are you currently employed? <span class="required">*</span> <br>
+                                        <select>
+                                            <option value="">please select</option>
+                                            <option value="yes">Yes</option>
+                                            <option value="no">No</option>
+                                            <option value="under">i'm underemployed</option>
+                                        </select>
+                                    </div><br>
+                                        
+                                    <div>
+                                        ...if so, please describe your current employment situation.
+                                        <textarea rows="4" cols="50">
+                                            
+                                        </textarea>
+                                    </div><br>
+
+                                    <div>
+                                        Do you understand and accept that the Andela fellowship is a 4 year program with contractual commitment? <span class="required">*</span> <br>
+                                        <select>
+                                            <option value="">--</option>
+                                            <option value="0">Yes</option>
+                                            <option value="1">No</option>
+                                        </select>
+                                    </div><br>
+
+                                    <div>
+                                        How did you hear/know about Andela? <span class="required">*</span>  <br>
+                                        <select>
+                                            <option value="Facebook">Facebook Advert</option>
+                                            <option value="2184240">Referred by a current or past Andela fellow</option>
+                                            <option value="Blog">iHub Blog Post</option>
+                                            <option value="Email">Email</option>
+                                            <option value="Twitter">Twitter</option>
+                                            <option value="iHub">iHub Jobs Board</option>
+                                            <option value="Tech">Jomo Kenyatta University Tech Expo 7.0</option>
+                                            <option value="Posters">Andela Posters</option>
+                                            <option value="AkiraChix">AkiraChix</option>
+                                            <option value="Kazi">Kazi Plus</option>
+                                            <option value="Opportunities">Opportunities for Africa</option>
+                                            <option value="Placement">University Career Placement Office</option>
+                                            <option value="Strathmore">Strathmore University Activation Event</option>
+                                            <option value="KCA">KCA Activation Event</option>
+                                            <option value="Educate">Educate Her Parade </option>
+                                            <option value="African">African Women in Tech. Conference 2016 (AWTC16).</option>
+                                            <option value="Riara">Riara University Activation Event</option>
+                                            <option value="LinkedIn">LinkedIn</option>
+                                            <option value="DevFest">DevFest 2016 at Strathmore</option>
+                                            <option value="USIU">USIU-PACS Open Day</option>
+                                            <option value="ANDE">ANDE East Africa Career Fair</option>
+                                            <option value="UoN">UoN Activation Event </option>
+                                            <option value="WhatsApp">WhatsApp Group Messages </option>
+                                        </select>
+                                    </div><br>
+
+                                    <div>
+                                        Others( Kindly indicate here) <br>
+                                        <input type="text" name="otherinfo" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                       Which East African Country are you applying from? ? <span class="required">*</span><br>
+                                        <select>
+                                            <option value="">Please select</option>
+                                            <option value="Kenya">Kenya</option>
+                                            <option value="Uganda">Uganda</option>
+                                            <option value="Tanzania">Tanzania</option>
+                                            <option value="Rwanda">Rwanda</option>
+                                            <option value="Burundi">Burundi</option>
+                                            <option value="Djibouti">Djibouti</option>
+                                            <option value="Eritrea">Eritrea</option>
+                                            <option value="Ethiopia">Ethiopia</option>
+                                            <option value="Somalia">Somalia</option>
+                                            <option value="Mozambique">Mozambique</option>
+                                            <option value="Madagascar">Madagascar</option>
+                                            <option value="Malawi">Malawi</option>
+                                            <option value="Zambia">Zambia</option>
+                                            <option value="Zimbabwe">Zimbabwe</option>
+                                            <option value="Comoros">Comoros</option>
+                                            <option value="Mauritius">Mauritius</option>
+                                            <option value="Seychelles">Seychelles</option>
+                                            <option value="South">South Sudan</option>
+                                        </select>
+                                    </div><br>
+                                    <div>
+                                        Others( Kindly indicate here) <br>
+                                        <input type="text" name="othercountry" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                        What motivated you to apply for Andela Fellowship? 
+                                        <textarea rows="4" cols="50">
+                                            
+                                        </textarea>
+                                    </div><br>
+
+                                     <div>
+                                        What would be your most convenient city to attend an Interview?<span class="required">*</span><br>
+                                        <select>
+                                            <option value="volvo">please</option>
+                                            <option value="Nairobi">Nairobi</option>
+                                            <option value="Kisumu">Kisumu</option>
+                                            <option value="Mombasa">Mombasa</option>
+                                        </select>
+                                    </div><br>
+
+                                    <div>
+                                        Have you applied to Andela before? <span class="required">*</span> <br>
+                                        <select>
+                                            <option value="">--</option>
+                                            <option value="1">Yes</option>
+                                            <option value="0">No</option>
+                                        </select>
+                                    </div><br>
+
+                                    <div>
+                                        ...if so, please describe which classes and how far you got each time 
+                                        <textarea rows="4" cols="50">
+                                            
+                                        </textarea>
+                                    </div><br>
+
+                                    <div>
+                                        <p>Andela's values are Excellence, Passion, Integrity, and Collaboration as elaborated below.</p> 
+
+                                        <p><span class="andela-color">EXCELLENCE</span> | WE ARE LIFELONG LEARNERS WHO STRIVE FOR MASTERY OF OUR CRAFT</p>
+                                        <p>· We prepare - then we deliver</p>
+                                        <p>· We solve problems and add value</p>
+                                        <p>· We expect to earn trust and respect</p>
+                                        <p>· We advance through merit alone</p>
+                                        <br>
+
+                                        <p><span class="andela-color">PASSION</span> | WE BELIEVE WE ARE GOING TO CHANGE THE WORLD AND ACT ACCORDINGLY</p>
+                                        <p>· We pursue Andela’s mission with unwavering energy and conviction</p>
+                                        <p>· We seek to inspire and to be inspired</p>
+                                        <p>· We challenge each other and walk away friends</p>
+                                        <p>· We embody grit and persistence</p>
+                                        <br>
+
+                                        <p><span class="andela-color">INTEGRITY</span> | WE CHOOSE EXTRAORDINARY PEOPLE, THEN TRUST THEM TO DO THE RIGHT THING</p>
+                                        <p>· We walk further to take the right path</p>
+                                        <p>· We want others to hold us accountable</p>
+                                        <p>· We speak honestly, even when it takes courage</p>
+                                        <br>
+
+                                        <p><span class="andela-color">COLLABORATION</span> | WE KNOW OUR SUM IS GREATER THAN OUR PARTS</p>
+                                        <p>· We put Andela before ourselves</p>
+                                        <p>· We out-compete through diversity</p>
+                                        <p>· We are not limited by borders, real or imagined</p>
+                                        <br>
+                                    </div>
+
+                                    <div>
+                                        <input type="text" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                        <p>Excellence: What has been the most effective way for you to learn new skills + perspectives? Why do you think this has been most effective for you? </p>
+                                        <input type="text" name="Excellence" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                        <p>Passion: What was the original reason you became interested in technology? How do you see technology affecting your career 10 years from now?  </p>
+                                        <input type="text" name="Passion" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                        <p>Integrity: What is an area that you used to perform poorly in where you now perform better? How did you achieve this improvement? </p>
+                                        <input type="text" name="Integrity" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                        <p>Collaboration: How do you hope to contribute value-add to the Andela community through collaboration during your time in the Fellowship? </p>
+                                        <input type="text" name="Collaboration" class="user_input2">
+                                    </div><br>
+
+                                    <div>
+                                        How much time have you spent learning programming with the following tools and resources? Videos / Online reference materials / Books / Other self-driven material 
+                                        <select>
+                                            <option value="">Please select</option>
+                                            <option value="a">Not Applicable / Less than 5 hours</option>
+                                            <option value="b">Limited / Less than 30 hours</option>
+                                            <option value="c">Moderate / 30-100 hours</option>
+                                            <option value="d">Heavy / 5+ hours per week for several months</option>
+                                        </select>
+                                    </div><br>
+
+                                    <div>
+                                            <p>...time spent with Andela's Online Homestudy program?</p>
+                                            <select>
+                                                <option value="">Please select</option>
+                                                <option value="a">Not Applicable / Less than 5 hours</option>
+                                                <option value="b">Limited / Less than 30 hours</option>
+                                                <option value="c">Moderate / 30-100 hours</option>
+                                                <option value="d">Heavy / 5+ hours per week for several months</option>
+                                            </select>
+                                        </div><br>
+
+                                        <div>
+                                            <p>...time spent using CodeAcademy / General Assembly / Coursera / Other similar online courses</p>
+                                            <select>
+                                                <option value="">Please select</option>
+                                                <option value="a">Not Applicable / Less than 5 hours</option>
+                                                <option value="b">Limited / Less than 30 hours</option>
+                                                <option value="c">Moderate / 30-100 hours</option>
+                                                <option value="d">Heavy / 5+ hours per week for several months</option>
+                                            </select>
+                                        </div><br>
+
+                                        <div>
+                                            <p>...time spent learning programming in a classroom setting? </p>
+                                            <select>
+                                                <option value="">Please select</option>
+                                                <option value="a">Not Applicable / Less than 5 hours</option>
+                                                <option value="b">Limited / Less than 30 hours</option>
+                                                <option value="c">Moderate / 30-100 hours</option>
+                                                <option value="d">Heavy / 5+ hours per week for several months</option>
+                                            </select>
+                                        </div><br>
+
+                                        <div>
+                                            <p>Do you have a LinkedIn profile? Enter URL </p>
+                                            <input type="text" name="link" class="user_input2">
+                                        </div><br>
+
+                                        <div>
+                                            <p>Would you like to recommend someone to the Andela Fellowship Program? If yes, kindly type their email address(es) below. </p>
+                                            <input type="text" name="firstname" class="user_input2">
+                                        </div><br>
+                                </form>     
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-default btn-default pull-right" data-dismiss="modal"> Submit</button>
+                                <button type="submit" class="btn btn-default btn-default pull-left" data-dismiss="modal"> Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="img/and2.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                        <h3>Andela Values</h3>
+                        <button type="button" data-toggle="modal" data-target="#modal2">See Values</button>
+                    </div>
+                    </a>
+                </div>
+                
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal2" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <img  class=centre src="img/Andela-logo.png" alt="Andela-logo">
+                            </div>
+                            <div class="modal-body">
+
+                                   <h1 align = "center" class="andela-color">THIS IS ANDELA</h1> 
+                                   <p>Andela was founded on a simple truth: brilliance is evenly distributed, but opportunity is not.
+                                    We unlock that brilliance by giving global companies access to untapped talent across Africa andcreating an on-ramp to the digital economy.Together, we are building an institution to impact the world for far longer than we will be here towitness. To do that, we must live our values and use them to guide our actions.</p>
+                                    <br>
+                        
+                                    <h4><span class="andela-color">EXCELLENCE</span> | WE ARE LIFELONG LEARNERS WHO STRIVE FOR MASTERY OF OUR CRAFT</h4>
+                                    <p>· We prepare - then we deliver</p>
+                                    <p>· We solve problems and add value</p>
+                                    <p>· We expect to earn trust and respect</p>
+                                    <p>· We advance through merit alone</p>
+                                    <br>
+
+                                    <h4><span class="andela-color">PASSION</span> | WE BELIEVE WE ARE GOING TO CHANGE THE WORLD AND ACT ACCORDINGLY</h4>
+                                    <p>· We pursue Andela’s mission with unwavering energy and conviction</p>
+                                    <p>· We seek to inspire and to be inspired</p>
+                                    <p>· We challenge each other and walk away friends</p>
+                                    <p>· We embody grit and persistence</p>
+                                    <br>
+
+                                    <h4><span class="andela-color">INTEGRITY</span> | WE CHOOSE EXTRAORDINARY PEOPLE, THEN TRUST THEM TO DO THE RIGHT THING</h4>
+                                    <p>· We walk further to take the right path</p>
+                                    <p>· We want others to hold us accountable</p>
+                                    <p>· We speak honestly, even when it takes courage</p>
+                                    <br>
+
+                                    <h4><span class="andela-color">COLLABORATION</span> | WE KNOW OUR SUM IS GREATER THAN OUR PARTS</h4>
+                                    <p>· We put Andela before ourselves</p>
+                                    <p>· We out-compete through diversity</p>
+                                    <p>· We are not limited by borders, real or imagined</p>
+                                    <br>
+
+                                    <p>Andela is a movement. Andela is a collection of brilliant minds across Africa. Andela is a programmingsprint followed by a football match, leading into a rooftop dance party. Andela is a platform fortech-enabled growth around the world. Andela is a commitment that while the digital revolution mayhave begun in Silicon Valley, its future will be written in Lagos, Nairobi, and cities across Africa.If all this is a mouthful, just say TIA: This is Andela. </p>
+                                    <br>
+
+                                    <img  class=centre src="img/Andela-logo.png" alt="Andela-logo">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-default btn-default pull-right" data-dismiss="modal"> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img src="img/and3.jpg" alt="Lights" style="width:100%">
+                    <div class="caption">
+                         <h3>How do you Benefit</h3>
+                         <button type="button" data-toggle="modal" data-target="#modal3">See Benefits</button>
+                    </div>
+                    </a>
+                </div>
+               
+
+                <!-- Modal -->
+                <div class="modal fade" id="modal3" role="dialog">
+                    <div class="modal-dialog">
+
+                    <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+                              <img  class=centre src="img/Andela-logo.png" alt="Andela-logo">
+                            </div>
+                            <div class="modal-body">
+
+                            <h3 align="center" class="andela-color">TECHNICAL LEADERSHIP PROGRAM</h3>
+                            <hr>
+                            <h4 align="center" >Overview</h4>
+
+                            <p>Andela’s four-year Technical Leadership Program is a blend of personalized instruction, supported self-study and hands-on experience building real products. Instead of paying tuition, as you would for a traditional academic program, you’ll earn a competitive salary and benefits throughout your four years with Andela.</p>
+                            <p>After successfully completing the initial training period, you’ll be fully prepared to start working with one of our clients as a full-time, distributed team member. During the remaining 3.5 years, you’ll apply your knowledge to client work, while receiving ongoing professional and technical development, coaching and mentorship.</p>
+                            <br>
+
+                            <h4 align="center" >Philosophy</h4>
+                            <p>We’ve built our program on the belief that brilliance is evenly distributed, but opportunity is not. We believe that real-world experience is invaluable and that professional skills are as critical as technical skills. We’ve created a blended learning environment (in-person and online) that encompasses the professional and technical skills you need to become Africa’s next generation of technology leaders:</p>
+                            <br>
+
+                            <div class=" center_stuff">
+                                <p>Supported self-study technical curricula</p>
+                                <p>Professional soft skills training</p>
+                                <p>1:1 guidance</p>
+                                <p>Realistic project simulations</p>
+                                <p>Mentorship from world-class senior trainers</p>
+                                <p>Peer learning groups that consist of other brilliant people with whom you’ll build lifelong friendships</p>
+                                <p>International client access</p>
+                            </div> <br>
+
+                            <h4 align="center" >Technology</h4>
+                            <div class=" center_stuff">
+                                <p>Our technical curricula spans the five most in-demand programming languages:</p>
+                                <p>Ruby / Ruby on Rails</p>
+                                <p>Python / Django</p>
+                                <p>PHP / Laravel</p>
+                                <p>MEAN Stack</p>
+                                <p>Mobile Development (Android and iOS)</p>
+                            </div>
+                            <br>
+                            
+                            <hr>
+                            <h3 align="center" class="andela-color">BENEFITS</h3>
+                            <hr>
+                            <h4 align="center" >Program Benefits</h4>
+                            Competitive monthly salary
+                            High speed fibre internet
+                            Financing plans for accommodations and a Macbook Pro
+                            Breakfast and lunch Monday through Friday
+                            Healthcare coverage
+                            Savings account ($5,000 USD upon completion of Fellowship)
+                            A community of excellence
+                            A chance to change the world
+
+
+
+                            <h4 align="center" >Career Benefits:</h4>
+                            <p>
+                            We are training future leaders committed to helping others succeed. As you advance in the program, you’ll mentor and support the next generation of Andela fellows. The Technical Leadership Program prepares you for endless career paths, including founding your own company, moving into management positions at Andela, and taking leadership roles at local and global tech companies. Graduates become a part of an exclusive alumni network and have access to career support, advice and opportunities.  
+                            </p>
+                            
+                            <p>Andela is not easy. Andela is a commitment, and in many ways a sacrifice. But it is a worthwhile one, and if you give it your all, you will become truly world-class.
+                            </p>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-default btn-default pull-right" data-dismiss="modal"> Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+         <div class="row" id= "blue">
+          <div class="col-sm-12">
+            <div class="thumbnail">
+                <img src="img/caursel1.jpg" alt="Lights" style="width:100%">
+            </div>
+          </div>
+        </div>
+    </div>
+    
+    <hr>    
+    <footer>
+        <p>Designed by: Kevin Tumbo</p>
+        <p>Contact information: <a href="mailto:kevin.tumbo39@gmail.com">Kevin.tumbo39@gmail.com</a>.</p>
+    </footer>
+
+</body>
+</html>

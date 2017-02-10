@@ -1,0 +1,72 @@
+/*centre logo*/
+.centre{
+	display: block;
+    margin: auto;
+}
+
+/*andela color*/
+.andela-color{
+	color: #3359df;
+	font-weight: bold;
+}
+
+/* Scorllable modal*/
+/* Important part */
+.modal-dialog{
+    overflow-y: initial !important
+}
+.modal-body{
+    height: 500px;
+    overflow-y: auto;
+}
+
+/*registration form*/
+.user_input{
+	width: 70%;
+	display: inline-block;
+  	float: right;
+  	margin-right:10%;
+}
+
+.required{
+	color: red;
+}
+
+.selection{
+	width:50%;
+}
+
+.user_input2{
+	width: 80%;
+}
+
+.center_stuff p{
+	text-align: center;
+}
+
+#con1{
+	background-color: #fff;
+}
+
+.jumbotron{
+	background-color: #fff;
+}
+
+#con2{
+	background-color: #3359df;
+	color:#fff;
+}
+@media (min-width: 1200px){
+	.container {
+    width: 100%;
+	}
+
+}
+
+footer {
+    font-size: 1em;
+    text-align: center;
+    clear: both;
+    padding-top: 10px;
+    color: #3359df;
+}
